@@ -3,7 +3,7 @@
 /* Tablet desktop :768px. */
 /* small mobile :320px. */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200&amp;display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* line 1, G:/admin_project/6 admin/sales/scss/_extends.scss */
 .CRM_dropdown.dropdown .dropdown-toggle:hover,
 .CRM_dropdown.dropdown .dropdown-toggle:focus {
@@ -11,7 +11,12 @@
   background: -o-linear-gradient(left, #7C32FF 0%, #A235EC 70%, #C738D8 100%);
   background: linear-gradient(90deg, #7C32FF 0%, #A235EC 70%, #C738D8 100%);
 }
-
+ html{
+   scroll-behavior: smooth;
+ }
+:root {
+  --Raleway:'Raleway', sans-serif;
+}
 /* line 6, G:/admin_project/6 admin/sales/scss/_extends.scss */
 .profile_info .profile_info_iner .profile_author_name {
   background-image: linear-gradient(to bottom right, #863ee2, #571f9e);
@@ -75,7 +80,10 @@ input:focus {
 
 /* line 39, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .form-control {
-  border-color: #BBC1C9;
+  width: 100%;
+  height: 40px !important;
+  border: 1px solid #DDD !important;
+  padding: 3px 10px !important;
 }
 
 /* line 42, G:/admin_project/6 admin/sales/scss/_reset.scss */
@@ -228,10 +236,12 @@ ol {
 /* line 120, G:/admin_project/6 admin/sales/scss/_reset.scss */
 p {
   line-height: 24px;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 0px;
   font-family: "Nunito", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
+  font-family: var(--Raleway);
+  line-height: 1.5;
 }
 
 /* line 129, G:/admin_project/6 admin/sales/scss/_reset.scss */
@@ -2309,11 +2319,6 @@ p a:hover {
   color: #fff;
 }
 
-/* line 1636, G:/admin_project/6 admin/sales/scss/_reset.scss */
-.bg-light {
-  background-color: #f8f5fd !important;
-  color: #fff;
-}
 
 /* line 1640, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .bg-dark {
@@ -2425,43 +2430,28 @@ p a:hover {
 .f_s_28 {
   font-size: 28px;
 }
-
-/* line 1709, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .f_s_40 {
   font-size: 40px;
 }
-
-/* line 1712, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .f_s_60 {
   font-size: 60px;
 }
-
-/* line 1715, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .ml_25 {
   margin-left: 25px;
 }
 
-/* line 1718, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .ml_15 {
   margin-left: 15px;
 }
-
-/* line 1721, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .color_theme {
   color: #14256A;
 }
-
-/* line 1724, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .color_theme2 {
   color: #101038;
 }
-
-/* line 1727, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .color_gray {
   color: #8890B5 !important;
 }
-
-/* line 1730, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .color_gray2 {
   color: #B1B6C9 !important;
 }
@@ -2469,7 +2459,6 @@ p a:hover {
   color: #3e3e3e !important;
   box-shadow: 0 0 14px rgb(128 128 128 / 17%);
 }
-/* line 1734, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse .pulse-ring {
   display: block;
   border-radius: 40px;
@@ -2489,59 +2478,39 @@ p a:hover {
 .fw-bold {
   font-weight: bold !important;
 }
-
-/* line 1750, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse .pulse-ring.notification_count_pulse {
   right: -18px;
   top: -14px;
 }
-
-/* line 1754, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-primary .pulse-ring {
   border-color: rgba(54, 153, 255, 0.75);
 }
-
-/* line 1757, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-secondary .pulse-ring {
   border-color: rgba(228, 230, 239, 0.75);
 }
-
-/* line 1761, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-success .pulse-ring {
   border-color: rgba(27, 197, 189, 0.75);
 }
-
-/* line 1765, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-info .pulse-ring {
   border-color: rgba(137, 80, 252, 0.75);
 }
 
-/* line 1769, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-warning .pulse-ring {
   border-color: rgba(255, 168, 0, 0.75);
 }
-
-/* line 1773, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-danger .pulse-ring {
   border-color: rgba(246, 78, 96, 0.75);
 }
-
-/* line 1777, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-light .pulse-ring {
   border-color: rgba(243, 246, 249, 0.75);
 }
-
-/* line 1781, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-dark .pulse-ring {
   border-color: rgba(24, 28, 50, 0.75);
 }
-
-/* line 1785, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.pulse-white .pulse-ring {
   border-color: rgba(255, 255, 255, 0.75);
 }
 
-/* line 1789, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .pulse.theme_color .pulse-ring {
   border-color: rgba(255, 255, 255, 0.75);
 }
@@ -2587,18 +2556,12 @@ p a:hover {
     opacity: 0;
   }
 }
-
-/* line 1832, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .header_more_tool .dropdown .dropdown-toggle::after {
   display: none !important;
 }
-
-/* line 1835, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .header_more_tool .dropdown span {
   padding-left: 0px;
 }
-
-/* line 1837, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .header_more_tool .dropdown span i {
   font-size: 12px;
   font-weight: 400;
@@ -2608,8 +2571,6 @@ p a:hover {
   top: -1px;
   margin-right: 0px;
 }
-
-/* line 1847, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .header_more_tool .dropdown .dropdown-menu {
   border: 0;
   margin: 0;
@@ -2621,24 +2582,17 @@ p a:hover {
   -moz-box-shadow: 0px 0px 20px 0px rgba(80, 143, 244, 0.2);
   box-shadow: 0px 0px 20px 0px rgba(80, 143, 244, 0.2);
 }
-
-/* line 1857, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .header_more_tool .dropdown .dropdown-menu a {
   padding: 8px 15px;
   font-size: 13px;
 }
 
-/* line 1860, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .header_more_tool .dropdown .dropdown-menu a:hover {
   color: #59748A;
 }
-
-/* line 1862, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .header_more_tool .dropdown .dropdown-menu a:hover i {
   color: #59748A;
 }
-
-/* line 1866, G:/admin_project/6 admin/sales/scss/_reset.scss */
 .header_more_tool .dropdown .dropdown-menu a i {
   font-size: 13px;
   vertical-align: middle;
@@ -2792,8 +2746,10 @@ p a:hover {
 /* line 18, G:/admin_project/6 admin/sales/scss/_button.scss */
 .btn_1:hover {
   color: #fff;
-  background-color: #567AED;
-  box-shadow: 0 3px 11px #508ff4;
+  background-color: #dfc456;
+  box-shadow: 0 3px 0px #e2c550;
+  border: 1px solid #e6ca57;
+  font-weight: 700;
 }
 
 /* line 23, G:/admin_project/6 admin/sales/scss/_button.scss */
@@ -3724,13 +3680,19 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child::before {
   max-height: 42px;
   display: none;
 }
-
+.profile_info img{
+  max-height: 42px;
+  display: none;
+}
 @media (max-width: 991px) {
 
   /* line 208, G:/admin_project/6 admin/sales/scss/_header.scss */
   .company_info img {
   width: 95%;
   display: block;
+  }
+  .profile_info{
+  width: 75px !important;
   }
 }
 
@@ -3837,8 +3799,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child::before {
 
   /* line 294, G:/admin_project/6 admin/sales/scss/_header.scss */
   .sidebar_icon {
-    right: auto;
     left: 20px;
+    width: 30px;
+    margin-right: 45px;
   }
 }
 
@@ -3855,6 +3818,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child::before {
 .sidebar_icon i {
   font-size: 20px;
   color: #101038;
+  margin-left: 5px;
   cursor: pointer;
 }
 
@@ -4363,11 +4327,11 @@ table.dataTable {
   text-align: center;
   line-height: 40px;
   position: absolute;
-  right: 30px;
-  font-size: 25px;
-  top: 29px;
+  right: 20px;
+  font-size: 20px;
+  top: 20px;
   cursor: pointer;
-  color: #222222;
+  color: #000000;
 }
 
 /* line 199, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
@@ -5127,6 +5091,8 @@ body::-webkit-scrollbar {
 @media (max-width: 768px) {
   .main_content {
     padding-left: 0px !important;
+    background-size: cover;
+    background-position: right;
   }
 }
 
@@ -6369,6 +6335,9 @@ canvas#highlights {
   font-weight: 500;
   color: #222;
   margin-bottom: 0;
+}
+.loginbutton{
+  padding:.375rem .75rem !important;
 }
 
 /* line 14, G:/admin_project/6 admin/sales/scss/_lms_category.scss */
@@ -13385,9 +13354,15 @@ a.pswp__share--download:hover {
 }
 .list-group-item-action:hover {
     z-index: 1;
+    background-color: #881f31 !important;
+}
+.list-group-item-action:hover a {
     color: #ffffff !important;
     text-decoration: none;
-    background-color: #881f31;
+}
+.list-group-item-action:hover p {
+    color: #ffffff !important;
+    text-decoration: none;
 }
 .list-none>li:hover .list-none>li>i {
     color: #ffffff !important;
@@ -13399,4 +13374,37 @@ a.pswp__share--download:hover {
   background: #f2f2f299;
   border: 1px solid #dee2e6;
   transition: 0.4s ease;
+}
+form>ul>li>span {
+  background: #c7c7c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.profile_info {
+  width: 120px;
+}
+.card-header-top-border{
+  border-top: 1px solid rgba(0,0,0,.125) !important;
+}
+.bg-gray{
+  background-color: #8b8b8b45 !important;
+}
+.border-gray{
+  border: 1px solid #e1e1e1;
+}
+.bmi_Cal input{
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  height: 35px;
+  box-shadow: inset 0px 1px 5px #d7d7d7;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+}
+.font-raleway{
+  font-family: 'Raleway', sans-serif;
 }
