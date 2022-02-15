@@ -424,3 +424,25 @@ collpseBtn.map(item => {
         collapseIcon.classList.toggle('collapseIconShow');
     }
 });
+
+var passViewer = document.getElementById('PassViewer');
+var passType = document.getElementsByClassName('passType');
+
+function typeChange() {
+    passType.forEach(function (el, i) {
+        if (el.getAttribute('type') == 'password') {
+            el.setAttribute('type', 'text');
+        } else {
+            el.setAttribute('type', 'password');
+        }
+    });
+};
+
+window.addEventListener('scroll', (e) => {
+    const nav = document.querySelector('.topNavBar');
+    if (window.pageYOffset > 0) {
+        nav.classList.add("nav_shadow");
+    } else {
+        nav.classList.remove("nav_shadow");
+    }
+});
