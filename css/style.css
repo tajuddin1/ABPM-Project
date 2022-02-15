@@ -14013,3 +14013,8 @@ gauge-needle img {
 .profile_info {
   position: relative;
 }
+
+.metismenu {
+  height: 510px;
+  overflow: scroll;
+}

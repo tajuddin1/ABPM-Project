@@ -81,12 +81,12 @@ include('../layouts/header-script.php');
                     </table>
                 </div>
                 <div class="card border-none mb-3">
-                    <div class="accordion" id="accordionExample" style="border-top-right-radius: 10px; border-top-left-radius:10px;">
-                        <div class="card question_card">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card question_card" style="border-radius: 10px !important;">
                             <div class="card-header bottom_shado bg-green collapseBtn p-0 border-bottom-0" id="headingFour">
                                 <a class="btn collapsed w-100 text-left icon_fix py-2 border-none" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span class="text-white f_w_600 f_s_18 " style="font-family: Comfortaa;">Diplomate Profile</span>
-                                    <i class="fas fa-chevron-circle-down collapseIcon"></i>
+                                    <span class="text-white f_w_600 f_s_14 " style="font-family: Comfortaa;">Diplomate Profile</span>
+                                    <i class="fas fa-chevron-circle-down collapseIcon" style="font-size: 18px;"></i>
                                 </a>
                             </div>
                             <div id="collapseFour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
